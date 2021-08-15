@@ -1,0 +1,33 @@
+.transaction-history {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  overflow: hidden;
+  border-radius: 4px;
+  text-align: center;
+  box-shadow: 6px 6px 6px rgba(92, 89, 89, 0.7);
+}
+thead {
+  color: whitesmoke;
+  background-color: rgb(100, 66, 66);
+}
+th,
+td {
+  padding: 5px 0px 5px 0px;
+}
+thead th:not(:last-child) {
+  border-right: 2px solid whitesmoke;
+}
+tbody tr:nth-child(odd) {
+  background-color: whitesmoke;
+}
+
+tbody tr:nth-child(even) {
+  background-color: wheat;
+}
+tbody tr:nth-child(even) td:not(:last-child) {
+  border-right: 2px solid whitesmoke;
+}
+tbody tr:nth-child(odd) td:not(:last-child) {
+  border-right: 2px solid wheat;
+}
