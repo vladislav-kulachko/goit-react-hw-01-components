@@ -1,32 +1,33 @@
 import PropTypes from 'prop-types';
-import './social-profile.module.css';
+import s from './social-profile.module.css';
+
 export default function UserProfile(props) {
   const {name, tag, location, avatar, stats} = props;
   return (
-    <div className="profile">
-      <div className="profile__description">
+    <div className={s.profile}>
+      <div className={s.profile__description}>
         <img
-          className="profile__avatar"
+          className={s.profile__avatar}
           src={avatar}
           alt="Аватар пользователя"
         />
-        <p className="profile__name">{name}</p>
-        <p className="profile__tag">@{tag}</p>
-        <p className="profile__location"> {location} </p>
+        <p className={s.profile__name}>{name}</p>
+        <p className={s.profile__tag}>@{tag}</p>
+        <p className={s.profile__location}> {location} </p>
       </div>
 
-      <ul className="stats">
+      <ul className={s.stats}>
         <li>
-          <span className="stats__label">Followers</span>
-          <span className="stats__quantity">{stats.followers}</span>
+          <span className={s.stats__label}>Followers</span>
+          <span className={s.stats__quantity}>{stats.followers}</span>
         </li>
         <li>
-          <span className="stats__label">Views</span>
-          <span className="stats__quantity">{stats.views}</span>
+          <span className={s.stats__label}>Views</span>
+          <span className={s.stats__quantity}>{stats.views}</span>
         </li>
         <li>
-          <span className="stats__label">Likes</span>
-          <span className="stats__quantity"> {stats.likes} </span>
+          <span className={s.stats__label}>Likes</span>
+          <span className={s.stats__quantity}> {stats.likes} </span>
         </li>
       </ul>
     </div>

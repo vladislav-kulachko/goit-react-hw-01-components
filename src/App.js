@@ -1,4 +1,3 @@
-import './App.css';
 import FriendList from './components/friend-list/friends-list';
 import Profile from './components/social-profile/social-profile';
 import Statistics from './components/statistics/statistics';
