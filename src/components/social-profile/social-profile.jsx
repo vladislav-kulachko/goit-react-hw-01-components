@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import './social-profile.css';
+import './social-profile.module.css';
 export default function UserProfile(props) {
   const {name, tag, location, avatar, stats} = props;
   return (

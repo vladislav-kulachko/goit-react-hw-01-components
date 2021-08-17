@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import './statistics.css';
+import './statistics.module.css';
 
 const randColor = () =>
   'rgb(' +
