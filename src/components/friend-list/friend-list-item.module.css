@@ -1,0 +1,30 @@
+.friendList__item {
+  background-color: whitesmoke;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+  border-radius: 1px;
+  box-shadow: 0px 1px 1px 1px rgba(148, 148, 146, 0.75);
+}
+.friendList__item:not(:last-child) {
+  margin-bottom: 10px;
+}
+.status {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: tomato;
+  margin-right: 10px;
+}
+.active {
+  background-color: yellowgreen;
+}
+.friendList__itemAvatar {
+  margin-right: 10px;
+  border-radius: 10%;
+  background-color: white;
+}
+.friendList__itemName {
+  font-weight: 700;
+}
