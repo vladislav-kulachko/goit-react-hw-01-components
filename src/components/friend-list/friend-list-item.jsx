@@ -2,10 +2,15 @@ import PropTypes from 'prop-types';
 
 export default function FriendListItem({avatar, name, isOnline}) {
   return (
-    <li className="item">
+    <li className="friend-list__item">
       <span className={isOnline ? 'status active' : 'status'}></span>
-      <img className="avatar" src={avatar} alt={name} width="48" />
-      <p className="name">{name}</p>
+      <img
+        className="friend-list__item-avatar"
+        src={avatar}
+        alt={name}
+        width="48"
+      />
+      <p className="friend-list__item-name">{name}</p>
     </li>
   );
 }
